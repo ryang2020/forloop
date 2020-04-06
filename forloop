@@ -1,0 +1,25 @@
+int l_motor = 0; 
+int r_motor = 2; 
+int speed = 75;   
+int longPause = 300;  
+int hi;
+
+
+void forward(){ 
+    motor(l_motor,speed);
+    motor(r_motor,speed);
+}
+
+int main()
+{
+for(hi=0; hi<=5; hi++){
+       forward(); 
+       msleep(longPause);
+   printf ("Number %d \n", hi);
+   }
+   
+   
+
+    ao();
+    return 0;
+}
